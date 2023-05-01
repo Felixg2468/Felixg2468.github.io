@@ -10,7 +10,10 @@ class Main {
     int nickel = 0;
     int penny = 0;
     while (amount > 0){
-      
+      if(amount > 25){
+        quarter++;
+        amount - 25;
+      }
     }
       
   }
