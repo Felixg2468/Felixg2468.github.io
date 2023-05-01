@@ -12,7 +12,19 @@ class Main {
     while (amount > 0){
       if(amount > 25){
         quarter++;
-        amount - 25;
+        amount = amount - 25;
+      }
+      if (amount > 10){
+        dime++;
+        amount = amount - 10;
+      }
+      if(amount > 5){
+        nickel++;
+        amount = amount - 5;
+      }
+      if (amount > 1){
+        penny++;
+        amount = amount - 1;
       }
     }
       
