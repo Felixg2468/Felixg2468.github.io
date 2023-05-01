@@ -11,6 +11,7 @@ class Main {
     int dime = 0;
     int nickel = 0;
     int penny = 0;
+    int total = quarter + dime + nickel + penny;
     while (amount > 0){
       if(amount >= 25){
         quarter += 1;
@@ -29,10 +30,11 @@ class Main {
         amount = amount - 1;
       }
     }
-    System.out.println(quarter);
-    System.out.println(dime);
-    System.out.println(nickel);
-    System.out.println(penny);
+    System.out.println("Quarters:" + quarter);
+    System.out.println("Dimes:" + dime);
+    System.out.println("Nickels:" + nickel);
+    System.out.println("Pennies:" + penny);
+    System.out.println("Total amount of coins: " + total);
       
   }
 }
